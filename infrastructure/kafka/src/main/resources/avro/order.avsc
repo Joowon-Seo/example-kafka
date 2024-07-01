@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "OrderApprovalMessage",
+  "namespace": "com.example.kafka",
+  "fields": [
+    { "name": "orderId", "type": "long" },
+    { "name": "productId", "type": "int" },
+    { "name": "quantity", "type": "int" }
+  ]
+}

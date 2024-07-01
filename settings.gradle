@@ -1,3 +1,4 @@
 rootProject.name = 'example-kafka'
 include 'order-service'
 include 'product-service'
+include 'infrastructure:kafka'

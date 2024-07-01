@@ -14,7 +14,7 @@ public class KafkaConsumer {
 
 	@KafkaListener(topics = "topic", groupId = "group_1")
 	public void listen(@Payload OrderApprovalMessage message) {
-		log.info("Received order approval message: {}", message);
+		log.info(message.toString());
 		log.info("Received data: ");
 	}
 }
