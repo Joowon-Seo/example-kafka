@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "OrderApprovalMessage",
+  "name": "OrderApprovalModel",
   "namespace": "com.example.kafka",
   "fields": [
     { "name": "orderId", "type": "long" },

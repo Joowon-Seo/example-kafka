@@ -20,6 +20,7 @@ public class KafkaProducer<K extends Serializable, V extends SpecificRecordBase>
 	public void send(String topicName, K key, V message) {
 		log.info("Sending message={} to topic={}", message, topicName);
 		kafkaTemplate.send(topicName, key, message);
+		log.info("finish message={} to topic={}", message, topicName);
 	}
 
 	@PreDestroy
